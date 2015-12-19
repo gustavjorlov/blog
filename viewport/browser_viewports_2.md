@@ -63,7 +63,7 @@ Imagine some years from now, where no device have devicePixelRatio = 1 any more.
 ## More viewports and responsive web design
 Let's introduce some proper names for the things we've just talked about. On a desktop browser there is the `viewport`, which has the same width as the browser window, (although altered at higher resolutions). On mobile though it's slightly more complicated.
 
-    Image of a desktop browser and its viewport
+![Layout viewport](desktop.png)
 
 ### Layout, visual and ideal viewport
 The rendering engine operates on what's called the `layout viewport` and the pysical pixels of the device makes the `visual viewport`, (The media queries we declare in CSS targets the layout viewport).
@@ -72,7 +72,7 @@ The rendering engine operates on what's called the `layout viewport` and the pys
 
 The third and last viewport, the `ideal viewport`, is an abstract notion of the best layout viewport for a particular device. The ideal viewport might as well be `physical pixels / devicePixelRatio = ?`, but in many cases it differs slightly from that. Luckily the developer has an easy way of using this, the meta viewport tag:
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
 This declaration goes inside the <head> section of the HTML. the `width=device-width` command tells the rendering engine to use the ideal viewport as layout viewport when it renders the web page. There are more options to this meta tag, summarized nicely here: [http://www.quirksmode.org/mobile/metaviewport/]
 
