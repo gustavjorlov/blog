@@ -11,9 +11,7 @@ A web browser is a computer program which lets the user view and interact with w
 Historically browsers tend to do the rendering task somewhat different. Which is a subject of its own, but let's stick to the subject and move on.
 
 ## Responsive web design
-Responsive web design is, according to Wikipedia (https://en.wikipedia.org/wiki/Responsive_web_design) "an approach to web design aimed at crafting sites to provide an optimal viewing and interaction experience — easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to mobile phones)". The practical translation for a web developer is:
-
-    we want complete control of the screen area and the interface we put on it has to have the right size for interaction and viewing.
+Responsive web design is, according to Wikipedia (https://en.wikipedia.org/wiki/Responsive_web_design) "an approach to web design aimed at crafting sites to provide an optimal viewing and interaction experience — easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to mobile phones)". The practical translation for a web developer is that we want complete control of the screen area and the interface we put on it has to have the right size for interaction and viewing.
 
 But mobile and desktop screens have different size and ratio and they have different types of input devices. This implies that interfaces need to be customized for the target screen and input device.
 
