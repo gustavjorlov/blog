@@ -32,10 +32,10 @@ Let's dive right in and look at some code. Assume the following markup and styli
 	    </body>
 	</html>
 
-This will result with the div #something to have the width of 35% of the parent element, <body>. The <body> element will take up 100% of the width of the <html> element. Then what, how wide is the <html> element?
+This will result with the div #something to have the width of 35% of the parent element, `<body>`. The `<body>` element will take up 100% of the width of the `<html>` element. Then what, how wide is the `<html>` element?
 
 ## The viewport
-The uppermost building block of a web layout is called the viewport. It's what contains the <html> element. It's the outer limits for the rendering engine to work with.
+The uppermost building block of a web layout is called the viewport. It's what contains the `<html>` element. It's the outer limits for the rendering engine to work with.
 
 When dealing with responsive web design, control of the viewport is what really enables us to produce interfaces for all screen sizes.
 
@@ -72,6 +72,6 @@ The third and last viewport, the `ideal viewport`, is an abstract notion of the 
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-This declaration goes inside the <head> section of the HTML. The `width=device-width` command tells the rendering engine to use the ideal viewport as layout viewport when it renders the web page. There are more options to this meta tag, summarized nicely here: [http://www.quirksmode.org/mobile/metaviewport/]
+This declaration goes inside the `<head>` section of the HTML. The `width=device-width` command tells the rendering engine to use the ideal viewport as layout viewport when it renders the web page. There are more options to this meta tag, summarized nicely here: [http://www.quirksmode.org/mobile/metaviewport/]
 
 ![Layout viewport](ideal.png)
