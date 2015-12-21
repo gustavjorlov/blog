@@ -3,7 +3,7 @@
 
 ---
 
-In this brief introduction I would like to give you an understanding of the mechanisms that make responsive web design possible. I aim not to go into unnecessary details, but to explain concepts at a level web developers can benefit from. I also would like to mention that browsers do things differently, especially in the free land of Android, but this short text has no room for handling inconsistencies between browsers.
+In this brief introduction I would like to give you an understanding of the mechanisms that make responsive web design possible. I aim not to go into unnecessary details, but to explain concepts at a level web developers can benefit from. I also would like to mention that browsers do things differently, especially in the free land of Android, but this short text has no room for handling inconsistencies between browsers since that is a entire story itself.
 
 ## First off, what is a web browser?
 A web browser is a computer program which lets the user view and interact with web pages. Technically, a browser (i.e. Google Chrome or Firefox) is of a computer program that runs natively on the current operating system. That program handles things like window management, tabs, bookmarks and more. It also uses a "rendering engine" to calculate what should be shown in the greater part of the interface. The browser is provided a url (usually the user writing in the address bar or clicking a link) which it passes to the rendering engine along with a surface that is used to paint the interface on.
@@ -68,10 +68,10 @@ The rendering engine operates on what's called the `layout viewport` and the phy
 
 ![Layout viewport](layout.png)
 
-The third and last viewport, the `ideal viewport`, is an abstract notion of the best layout viewport for a particular device. The ideal viewport might as well be `physical pixels / devicePixelRatio = ?`, but in many cases it differs slightly from that. Luckily the developer has an easy way of using this, the meta viewport tag:
+The third and last viewport, the `ideal viewport`, is an abstract notion of the best layout viewport for a particular device. The ideal viewport might as well be `physical pixels / devicePixelRatio`, but in many cases it differs slightly from that (see this list for details: TODO). Luckily the developer has an easy way of using the ideal viewport:
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-This declaration goes inside the `<head>` section of the HTML. The `width=device-width` command tells the rendering engine to use the ideal viewport as layout viewport when it renders the web page. There are more options to this meta tag, summarized nicely here: [http://www.quirksmode.org/mobile/metaviewport/]
+This declaration is the meta viewport tag and it goes inside of the `<head>` section of the HTML. The `width=device-width` command tells the rendering engine to use the ideal viewport as layout viewport when it renders the web page. There are more options to this meta tag, summarized by [Apple](https://developer.apple.com/library/iad/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
 ![Layout viewport](ideal.png)
