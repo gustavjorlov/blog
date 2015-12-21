@@ -1,5 +1,4 @@
 # What makes responsive design work?
-## A short story about browsers
 
 ---
 
