@@ -11,7 +11,7 @@ A web browser is a computer program which lets the user view and interact with w
 Historically browsers tend to do the rendering task somewhat different. Which is a subject of its own, but let's stick to the subject and move on.
 
 ## Responsive web design
-Responsive web design is, according to Wikipedia (https://en.wikipedia.org/wiki/Responsive_web_design) "an approach to web design aimed at crafting sites to provide an optimal viewing and interaction experience — easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to mobile phones)". The practical translation for a web developer is that we want complete control of the screen area and the interface we put on it has to have the right size for interaction and viewing.
+Responsive web design is, [according to Wikipedia](https://en.wikipedia.org/wiki/Responsive_web_design) "an approach to web design aimed at crafting sites to provide an optimal viewing and interaction experience — easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to mobile phones)". The practical translation for a web developer is that we want complete control of the screen area and the interface we put on it has to have the right size for interaction and viewing.
 
 But mobile and desktop screens have different size and ratio and they have different types of input devices. This implies that interfaces need to be customized for the target screen and input device.
 
@@ -58,7 +58,7 @@ Try and type in `devicePixelRatio` to your browser developer console, what comes
 
 Imagine some years from now, where no device have devicePixelRatio = 1 any more. It will be weird to write CSS targeting pixel sizes that no device have.
 
-## More viewports and responsive web design
+## What sets mobile apart from desktop?
 Let's introduce some proper names for the things we've just talked about. On a desktop browser there is the `viewport`, which has the same width as the browser window, (although altered at higher resolutions). On mobile though it's slightly more complicated.
 
 ![Layout viewport](desktop.png)
@@ -72,6 +72,13 @@ The third and last viewport, the `ideal viewport`, is an abstract notion of the 
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-This declaration is the meta viewport tag and it goes inside of the `<head>` section of the HTML. The `width=device-width` command tells the rendering engine to use the ideal viewport as layout viewport when it renders the web page. There are more options to this meta tag, summarized by [Apple](https://developer.apple.com/library/iad/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+This declaration is the meta viewport tag and it goes inside of the `<head>` section of the HTML. The `width=device-width` command tells the rendering engine to use the ideal viewport as layout viewport when it renders the web page. There are more options to this meta tag, summarized by [Peter-Paul Koch at Quirksmode](http://www.quirksmode.org/mobile/metaviewport/)
 
 ![Layout viewport](ideal.png)
+
+## Where to go from here
+By now you hopefully have the understanding of why media queries work the way they do and a little bit of history about the challenges with web development for mobile devices. This short article does not cover the actual use of media queries, although I provided some good links to further reading and more comprehensive guides to that.
+
+- [Quirksmode - Mobile](http://www.quirksmode.org/mobile/)
+- [Apple - Supported meta tags: viewport](https://developer.apple.com/library/iad/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html#//apple_ref/doc/uid/TP40008193-SW6)
+- [CSS-TRICKS - CSS Media Queries & Using Available Space](https://css-tricks.com/css-media-queries/)
